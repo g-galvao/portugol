@@ -8,30 +8,30 @@ programa {
 		    para(y = 0; y < 3; y++) {
 		        escreva("Digite um valor para a posição: [",x,"][",y,"]: ")
 		        leia(matriz[x][y])
-		        limpa()
+		        //limpa()
 		        se(x == y) {
 		            diagonalP[x] = matriz[x][y]
 		        }
 		        se(x + y == 2) {
-		            diagonalS[y] = matriz[x][y]
+		            diagonalS[y] = matriz[y][x]
 		        }
 		    }
 		}
 		
-		escreva("Elementos da Diagonal Principal: ")
+		escreva("\n > Elementos da Diagonal Principal: ")
 		para(x = 0; x < 3; x++) {
 		    escreva(diagonalP[x], " ")
 		    somaP = somaP + diagonalP[x]
 		}
 		
-		escreva("\nElementos da Diagonal Secundária:  ")
+		escreva("\n > Elementos da Diagonal Secundária:  ")
 		para(x = 0; x < 3; x++) {
 		    escreva(diagonalS[x]," ")
 		    somaS = somaS + diagonalS[x]
 		}
 		
-		escreva("\nSoma dos elementos da Diagonal Principal: ", somaP)
-		escreva("\nSoma dos elementos da Diagonal Secundária: ", somaS)
+		escreva("\n > Soma dos elementos da Diagonal Principal: ", somaP)
+		escreva("\n > Soma dos elementos da Diagonal Secundária: ", somaS)
 		
 	}
 }
