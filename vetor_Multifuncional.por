@@ -23,6 +23,14 @@ programa {
 		    contador++
 		}
 		
+		escreva("\n > Números pares digitados: ")
+		
+		para(contador = 0; contador < tamanho; contador++) {
+			se(vetor[contador] % 2 == 0) {
+				escreva(vetor[contador], " ")
+			}
+		}
+		
 		escreva("\n > Números digitados: ")
 		
 		para(contador = 0; contador < tamanho; contador++) {
